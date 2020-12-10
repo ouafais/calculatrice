@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <heade>
+        <!--les deux premiers link sont de google font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <!--le lien de la feuille de style-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>calculatrice</title>
+    </heade>
+    <body>
+        <!--on cree une div pour recevoir notre calculatrice-->
+        <div id="calculatrice">
+            <!-- notre calculatrice a une div pour les resulats-->
+            <div id="resultat">
+                <!--la partie memoire montre l'historique de saisie de calculatrice-->
+                <div id="memoire">
+                    <p id="memoire-valeur"></p>
+                </div>
+                <!--la partie entree affiche ce que l'utilisateur tape sur le clavier de calculatrice-->
+                <div id="entree">
+                    <p id="entree-valeur"></p>
+                </div>
+            </div>
+            <!--la partie clavier contient le nombres et operations sous forme de bouttons-->
+            <div id="clavier">
+                <button class="operateur" id="clear">C</button>
+                <button class="operateur" id="retour">CE</button>
+                <button class="operateur" id="%">%</button>
+                <button class="operateur" id="/">&#247;</button>
+                <button class="nombre" id="7">7</button>
+                <button class="nombre" id="8">8</button>
+                <button class="nombre" id="9">9</button>
+                <button class="operateur" id="*">&times;</button>
+                <button class="nombre" id="4">4</button>
+                <button class="nombre" id="5">5</button>
+                <button class="nombre" id="6">6</button>
+                <button class="operateur" id="-">-</button>
+                <button class="nombre" id="1">1</button>
+                <button class="nombre" id="2">2</button>
+                <button class="nombre" id="3">3</button>
+                <button class="operateur" id="+">+</button>
+                <button class="vide" id="vide"></button>
+                <button class="nombre" id="0">0</button>
+                <button class="vide" id="vide"></button>
+                <button class="operateur" id="=">=</button>
+            </div>
+                
+        </div>
+        
+       
+        <script src="script.js"></script>
+
+    </body>
+</html>

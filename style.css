@@ -1,0 +1,106 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #eef1f1;
+}
+
+#calculatrice {
+  /* on determine la taille de notre calculatrice */
+  width: 320px;
+  height: 520px;
+  background-image: url(arriere-plan.jpg);
+  /* pour centrer notre calculatrice au milieu de la page */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -260px;
+  margin-left: -160px;
+  /* fin des commande pour centrer*/
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#resultat {
+  height: 120px;
+}
+
+#memoire {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #919191;
+}
+
+#entree {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 35px;
+}
+#clavier {
+  height: 400px;
+}
+.operateur,
+.nombre,
+.vide {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.nombre,
+.vide {
+  background-color: transparent;
+}
+.nombre,
+.operateur {
+  cursor: pointer;
+}
+
+.operateur:active,
+.nombre:active {
+  font-size: 13px;
+}
+
+.operateur:focus,
+.nombre:focus,
+.vide:focus {
+  outline: 0;
+}
+
+button:nth-child(4) {
+  font-size: 20px;
+  background-color: #d98f9d;
+}
+button:nth-child(8) {
+  font-size: 20px;
+  background-color: #b1b9cc;
+}
+button:nth-child(12) {
+  font-size: 20px;
+  background-color: #f2c879;
+}
+button:nth-child(16) {
+  font-size: 20px;
+  background-color: #aecbd1;
+}
+button:nth-child(20) {
+  font-size: 20px;
+  background-color: #f2935c;
+}
+
+button:nth-child(1) {
+  background-color: #d9e5e5;
+}
+button:nth-child(2) {
+  background-color: #d9e5e5;
+}
+button:nth-child(3) {
+  background-color: #d9e5e5;
+}
